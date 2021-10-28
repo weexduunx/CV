@@ -1,0 +1,26 @@
+.conteneur {
+    display: flex;
+
+}
+
+
+.aside {
+    width: 30%;
+    background-color: blueviolet;
+}
+
+.principale {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    background-color: aquamarine;
+}
+.pied{
+    background-color: yellowgreen;
+     flex-shrink: 0;
+}
+
+
+
+/*-------------------Zig Zag Timeline-----------------------*/
+
