@@ -1,26 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+#header{
+    background-color: #aaa;
+    padding: 5px;
+}
 .conteneur {
     display: flex;
+    
 
 }
 
 
+#nav {
+
+    padding: 15px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav h1 {
+    margin: 0;
+    color: whitesmoke;
+    text-transform: uppercase;
+  }
+  .menu {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+  }
+  
+  .menu a {
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: block;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+.colonne{
+    display: flex;
+    flex-wrap: wrap;
+}
 .aside {
-    width: 30%;
-    background-color: blueviolet;
+    width: 15%;
+    background-color: yellowgreen;
+    display: flex;
+    padding: 30px;
+    
 }
 
 .principale {
     flex: 1;
     position: relative;
     overflow: auto;
-    background-color: aquamarine;
+    background-color: lightgrey;
+    margin-left: 10px;
+    margin: 70px;
 }
 .pied{
-    background-color: yellowgreen;
+    background-color: lightgrey;
      flex-shrink: 0;
+     
 }
 
 
 
-/*-------------------Zig Zag Timeline-----------------------*/
+/*-------------------Chronologie-----------------------*/
+
+.ligne {
+    /* Bordure */
+    border-right: 2px solid #aaa;
+
+    /* Positionné à gauche */
+    left: 16px;
+    position: absolute;
+    top: 0px;
+
+    /* Prendre toute la hauteur */
+    height: 100%;
+}
+
+.elmts {
+    /* Réinitialiser les styles */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.elmt {
+    margin-bottom: 8px;
+}
+
+.top {
+    /* Centrer le contenu horizontalement*/
+    align-items: center;
+    display: flex;
+}
+
+.cercle {
+    /* Bordure arrondie */
+    background-color: rgb(170, 170, 170);
+    border-radius: 9999px;
+
+    /* Taille */
+    height: 32px;
+    width: 32px;
+}
+
+.titre {
+    /* Prendre la largeur disponible */
+    flex: 1;
+}
+
+.des {
+    /* Alignez-le avec le titre */
+    margin-left: 48px;
+}
 
