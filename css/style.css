@@ -3,7 +3,9 @@
     margin: 0px;
     padding: 0px;
   }
+
 #header{
+    display: flex;
     background-color: #aaa;
     padding: 50px auto;
 }
@@ -11,6 +13,38 @@
     display: flex;
 }
 
+.principale {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    background-color: rgba(121, 104, 119, 0.11);
+    margin-left: 10px;
+    margin: 70px;
+}
+.aside {
+    width: 15%;
+    background-color: blueviolet;
+    display: flex;
+    padding: 30px;
+    
+}
+
+#coin {
+    background-color:#e3e5e7bd;
+    border:1px solid violet;
+    padding:5px auto;
+    /*arrondir les coins en haut à gauche et en bas à droite*/
+    -moz-border-radius:10px 0;
+    -webkit-border-radius:10px 0;
+    border-radius:10px 0;
+    }
+
+    .arrondie {
+        border:2px solid blueviolet;
+        -moz-border-radius:7px;
+        -webkit-border-radius:7px;
+        border-radius:7px;
+        }
 
 nav{
     width: 100%;
@@ -87,22 +121,7 @@ nav > ul li:hover .sousMenu{
     display: flex;
     flex-wrap: wrap;
 }
-.aside {
-    width: 15%;
-    background-color: yellowgreen;
-    display: flex;
-    padding: 30px;
-    
-}
 
-.principale {
-    flex: 1;
-    position: relative;
-    overflow: auto;
-    background-color: lightgrey;
-    margin-left: 10px;
-    margin: 70px;
-}
 .pied{
     background-color: lightgrey;
      flex-shrink: 0;
