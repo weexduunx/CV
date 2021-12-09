@@ -1,19 +1,29 @@
+main {
+    padding       : 0;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
 .cv {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows   : 1fr 1fr 1fr 1fr;
     box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
     grid-gap             : 5px;
     grid-template-areas:
-    "photo education"
-    "nomPrenom travail"
-    "apropos travail"
-    "competence communaute";
+    "nomPrenom           nomPrenom       photo"
+    "travail           travail       apropos"
+    "travail           travail       education"
+    "communaute      references competence";
   }
 
+  .division {
+    padding: 1em 1em 1em 1em;
+    border : 1px black solid;
+}
   .nomPrenom {
     grid-area : nomPrenom;
-    background-color: grey;
+   
   }
   
   .photo {
@@ -27,6 +37,7 @@
     height          : 250px;
     width           : 250px;
     border-radius   : 50%;
+    
   }
 
   .apropos{
@@ -38,3 +49,16 @@
       grid-area: travail;
   }
 
+  .education{
+      grid-area: education;
+      background-color: grey;
+  }
+
+  .competence{
+    grid-area: competence;
+    background-color: grey;
+  }
+
+  .communaute{
+      grid-area: communaute;
+  }
