@@ -32,10 +32,6 @@ principal {
     }
   }
 
-  @media print {
-    /* remove any screen only styles, for example link underline */
-  }
-  
   @page {
     padding: 0;
     margin: 0cm;
