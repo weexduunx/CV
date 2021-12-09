@@ -1,184 +1,40 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+.cv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows   : 1fr 1fr 1fr 1fr;
+    box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+    grid-gap             : 5px;
+    grid-template-areas:
+    "photo education"
+    "nomPrenom travail"
+    "apropos travail"
+    "competence communaute";
   }
 
-#header{
-    display: flex;
-    background-color: #aaa;
-    padding: 50px auto;
-}
-.conteneur {
-    display: flex;
-}
+  .nomPrenom {
+    grid-area : nomPrenom;
+    background-color: grey;
+  }
+  
+  .photo {
+    grid-area : photo;
+    background-color: grey;
+  }
 
-.principale {
-    flex: 1;
-    position: relative;
-    overflow: auto;
-    background-color: rgba(121, 104, 119, 0.11);
-    margin-left: 10px;
-    margin: 70px;
-}
-.aside {
-    width: 15%;
-    background-color: blueviolet;
-    display: flex;
-    padding: 30px;
-    
-}
+  .cercle {
+    border          : 1px solid black;
+    background-color: white;
+    height          : 250px;
+    width           : 250px;
+    border-radius   : 50%;
+  }
 
-#coin {
-    background-color:#e3e5e7bd;
-    border:1px solid violet;
-    padding:5px auto;
-    /*arrondir les coins en haut à gauche et en bas à droite*/
-    -moz-border-radius:10px 0;
-    -webkit-border-radius:10px 0;
-    border-radius:10px 0;
-    }
+  .apropos{
+      grid-area: apropos;
+      background-color: grey;
+  }
 
-    .arrondie {
-        border:2px solid blueviolet;
-        -moz-border-radius:7px;
-        -webkit-border-radius:7px;
-        border-radius:7px;
-        }
-
-nav{
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fff;
-    position:sticky;
-    top: 0px;
-}
-
-nav ul{
-    list-style-type: none;
-}
-
-nav ul li{
-    float: left;
-    width: 25%;
-    text-align: center;
-    position: relative;
-}
-nav ul::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-nav a{
-    display: block;
-    text-decoration: none;
-    color: gray;
-    border-bottom: 1px solid transparent;
-    padding: 10px 0px;
-}
-
-nav a:hover{
-    color: blueviolet;
-    border-bottom: 2px solid violet;
-}
-
-.sousMenu{
-    display: none;
-    box-shadow: 0px 1px 2px #CCC;
-    background-color: lightgrey;
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-}
-
-nav > ul li:hover .sousMenu{
-    display: block ;
-}
-
-.sousMenu li{
-    float: none;
-    width: 100%;
-    text-align: left;
-}
-
-.sousMenu a{
-    padding: 10px;
-    border-bottom: none;
-}
-
-.sousMenu a:hover{
-    border-bottom: none;
-    background-color: #fff;
-}
-
-.menu > a::after{
-    content:" ▼";
-    font-size: 12px;
-}
-
-.colonne{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.pied{
-    background-color: lightgrey;
-     flex-shrink: 0;
-     
-}
-
-
-
-/*-------------------Chronologie-----------------------*/
-
-.ligne {
-    /* Bordure */
-    border-right: 2px solid #aaa;
-
-    /* Positionné à gauche */
-    left: 16px;
-    position: absolute;
-    top: 0px;
-
-    /* Prendre toute la hauteur */
-    height: 100%;
-}
-
-.elmts {
-    /* Réinitialiser les styles */
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.elmt {
-    margin-bottom: 8px;
-}
-
-.top {
-    /* Centrer le contenu horizontalement*/
-    align-items: center;
-    display: flex;
-}
-
-.cercle {
-    /* Bordure arrondie */
-    background-color: rgb(170, 170, 170);
-    border-radius: 9999px;
-
-    /* Taille */
-    height: 32px;
-    width: 32px;
-}
-
-.titre {
-    /* Prendre la largeur disponible */
-    flex: 1;
-}
-
-.des {
-    /* Alignez-le avec le titre */
-    margin-left: 48px;
-}
+  .travail{
+      grid-area: travail;
+  }
 
