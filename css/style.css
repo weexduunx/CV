@@ -1,4 +1,4 @@
-main {
+principal {
     padding       : 0;
     display       : flex;
     flex-direction: column;
@@ -9,6 +9,8 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows   : 1fr 1fr 1fr 1fr;
     box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+   
+    /* pour contrôler l'écart des éléments */
     grid-gap             : 5px;
     grid-template-areas:
     "nomPrenom           nomPrenom       photo"
@@ -17,6 +19,7 @@ main {
     "communaute      references competence";
   }
 
+  /* je divise les éléments avec des bordures */
   .division {
     padding: 1em 1em 1em 1em;
     border : 1px black solid;
