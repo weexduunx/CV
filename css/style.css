@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:wght@500&family=Poppins:wght@400;700&display=swap');
 
 principal {
     padding       : 0;
@@ -43,14 +43,14 @@ principal {
   }
 
   h1{
-    font-family: 'Playfair Display', serif;
-    /* font-family: 'Oswald', sans-serif;   */
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     margin: 0;
   }
 
   h3{
-    font-family: 'Oswald', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     margin: 0;
   }
 
@@ -73,7 +73,7 @@ principal {
     "communaute      references competence";
     width : 210mm;
     height: 297mm;
-    border: 1px solid black;
+    
   }
 
   /* je divise les éléments avec des bordures */
@@ -83,6 +83,7 @@ principal {
 }
   .nomPrenom {
     grid-area : nomPrenom;
+    background-color: whitesmoke;
    
   }
   
@@ -110,6 +111,7 @@ principal {
 
   .travail{
       grid-area: travail;
+      background-color: whitesmoke;
   }
 
   .education{
@@ -124,4 +126,10 @@ principal {
 
   .communaute{
       grid-area: communaute;
+      background-color: whitesmoke;
+  }
+
+  .references{
+    grid-area: references;
+    background-color: whitesmoke;
   }
